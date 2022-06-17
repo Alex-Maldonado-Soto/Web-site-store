@@ -30,13 +30,13 @@ header {
     align-items: center;
 }
 
-menu {
+.text-logo{
     margin: 10px 10px;
     font-family: 'Roboto Slab', serif;
     font-weight: 900;
 }
 
-menu i {
+.logo {
     color: var(--color-green);
     font-size: 1.6em;
 }
@@ -330,6 +330,7 @@ button:hover {
         box-shadow: 0 0 6px var(--color-green);
         border-radius: 10px;
         width: 80vw;
+        margin: auto;
     }
 
     .form {
@@ -413,3 +414,15 @@ button:hover {
 }
 
 /*Fin del formulario o el order*/
+
+/*Inicio del codigo footer*/
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 10px;
+        
+    }
+
+
+/*Fin del codigo Footer*/

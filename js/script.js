@@ -1,5 +1,5 @@
 const nombre = document.getElementById("name")
-const pass = document.getElementById("password")
+const textForm = document.getElementById("text")
 const email = document.getElementById("email")
 const form = document.getElementById("form")
 const parrafo = document.getElementById("warnings")
@@ -12,7 +12,7 @@ form.addEventListener("submit", e=> {
     let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/
     parrafo.innerHTML = ""
     if(nombre.value.length <6){
-        warnings += `El nombre no es valido <br>`
+        warnings += `El nombre no es valido es muy corto <br>`
         entrar = true
     }
 
@@ -23,8 +23,8 @@ form.addEventListener("submit", e=> {
         entrar = true
     }
 
-    if(pass.value.length < 8){
-        warnings += `La contrasena no es valida <br>`
+    if(textForm.value.length < 3){
+        warnings += `El texto es muy corto<br>`
         entrar = true
     }
 
