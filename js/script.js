@@ -16,17 +16,12 @@ form.addEventListener("submit", e=> {
         entrar = true
     }
 
-    console.log(regexEmail.test(email.value))
 
     if(!regexEmail.test(email.value)){
         warnings += `El email no es valido <br>`
         entrar = true
     }
 
-    if(textForm.value.length < 3){
-        warnings += `El texto es muy corto<br>`
-        entrar = true
-    }
 
     if(entrar){
         parrafo.innerHTML = warnings

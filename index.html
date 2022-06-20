@@ -37,12 +37,6 @@
                  <a href="#">Review</a>
                  <a href="#">Order</a>
                 </nav>
-
-                <div id="menu-header">
-                    <i class="fa-solid fa-magnifying-glass"><a href="#"></a></i>
-                    <i class="fa-solid fa-heart"><a href="#"></a></i>
-                    <i class="fa-solid fa-cart-shopping"><a href="#"></a></i>    
-                </div>
     </header>
 
     <!--Fin del header-->
@@ -54,7 +48,7 @@
     <div class="slider__container container">
         <img src="assents/row-left.svg" alt="Imagen de flecha Izquierda" class="slider__arrow" id="before">
 
-        <section class="slider__body slider__body--show" data-id="1">
+        <article class="slider__body slider__body--show" data-id="1">
             <div class="slider__texts">
                 <h5>Our Special Dish</h5>
                 <h2>Fried Chicken</h2>
@@ -68,9 +62,9 @@
         </figure>
 
 
-        </section>
+    </article>
 
-        <section class="slider__body" data-id="2">
+        <article class="slider__body" data-id="2">
             <div class="slider__texts">
                 <h5>Our Special Dish</h5>
                 <h2>Fried Chicken</h2>
@@ -84,9 +78,9 @@
         </figure>
 
 
-        </section>
+        </article>
 
-        <section class="slider__body" data-id="3">
+        <article class="slider__body" data-id="3">
             <div class="slider__texts">
                 <h5>Our Special Dish</h5>
                 <h2>Fried Chicken</h2>
@@ -100,7 +94,7 @@
         </figure>
 
 
-        </section>
+        </article>
 
 
 
@@ -253,7 +247,7 @@
             
         </div>
    
-  </section>
+  </section> 
 
   
     <!--Fin del productos 1-->
@@ -266,24 +260,25 @@
         <h2>Popular Dish</h2>
     </div>
 
-    <div id="container-about">
+    <article id="container-about">
       
-            <img id="img-about" src="imagenes/about-img.png" alt="Imagen de un platillo">
+            
       
         <div id="text-about">
             <h2>food in the country</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum dolore aut? Perspiciatis, ad ut, architecto provident cupiditate non voluptatem impedit id perferendis officia quo numquam excepturi nisi. Aperiam, tempore.</p>
-           <div class="button__about">
-            <a href="#"><button ><i class="fa-solid fa-magnifying-glass"></i>Delivery</button></a>
-            <a href="#"><button ><i class="fa-solid fa-magnifying-glass"></i>Easy Payments</button></a>
-            <a href="#"><button ><i class="fa-solid fa-magnifying-glass"></i>24/7 Services</button></a>
-           </div>
-            <div>
-                <a href="#"><button></i>Learn more</button></a>
+            <p id="p-about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus voluptatum dolore aut? Perspiciatis, ad ut, architecto provident cupiditate non voluptatem impedit id perferendis officia quo numquam excepturi nisi. Aperiam, tempore.</p>
+            <div class="menu-icons-about">
+                <i class="fa-solid fa-magnifying-glass"><span>Free Delivery</span><a href="#"></a></i>
+                <i class="fa-solid fa-magnifying-glass"><span>Free Delivery</span><a href="#"></a></i>
+                <i class="fa-solid fa-magnifying-glass"><span>Free Delivery</span><a href="#"></a></i>
+                   
+            </div>
             </div>
         </div>
 
-    </div>
+        <img id="img-about" src="imagenes/about-img.png" alt="Imagen de un platillo">
+
+    </article>
   </section>
 
 
@@ -370,15 +365,20 @@
                     <h2>Now</h2>
                 </div>
                 <div class="grupo">
-                    <input type="text" name="" id="name" required><span class="barra"></span>
+                    <input type="text" name="" id="name" required autocomplete="additional-name"><span class="barra"></span>
                     <label for="">Name</label>
                 </div>
                 <div class="grupo">
-                    <input type="email" name="" id="email" required><span class="barra"></span>
+                    <input type="email" name="" id="email" required autocomplete="email"><span class="barra"></span>
                     <label for="">Email</label>
                 </div>
                 <div class="grupo">
-                    <input type="text" name="" id="text" required><span class="barra"></span>
+                    <input list="cursos">
+                        <datalist id="cursos">
+                                <option value="javascript"></option>
+                                <option value="html"></option>
+                                <option value="css"></option>
+                        </datalist><span class="barra"></span>
                     <label for="">Orden</label>
                 </div>
 
@@ -392,18 +392,18 @@
 
 
     <footer>
-        <article>
+        <div>
             <i  class="fa-solid fa-cart-shopping logo"></i>
             <span class="text-logo">FoodStore</span>
-        </article>
+        </div>
 
-        <div id="menu-header">
+        <div class="menu-icons">
             <i class="fa-solid fa-magnifying-glass"><a href="#"></a></i>
             <i class="fa-solid fa-heart"><a href="#"></a></i>
             <i class="fa-solid fa-cart-shopping"><a href="#"></a></i>    
         </div>
 
-        <span class="copyright">&copy;2022, maldexander. All rights reserved.</span>
+        <span class="copyright">Copyright &copy; 2022 By <h5>maldexander</h5></span>
 
     </footer>
 

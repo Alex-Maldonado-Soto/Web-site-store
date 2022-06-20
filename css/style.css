@@ -28,8 +28,10 @@ header {
     justify-content: space-between;
     font-size: 1.5em;
     align-items: center;
+    position: fixed;
+    width: 100vw;
+    background-color: var(--color-white-cards);
 }
-
 .text-logo{
     margin: 10px 10px;
     font-family: 'Roboto Slab', serif;
@@ -39,10 +41,11 @@ header {
 .logo {
     color: var(--color-green);
     font-size: 1.6em;
+    margin-left: 40px;
 }
 
 nav {
-    margin: 10px 10px;
+    margin: 10px 36px 10px 10px;
     text-align: center;
     font-family: 'Roboto Slab', Arial;
     font-weight: 500;
@@ -66,8 +69,8 @@ nav a:hover{
     transition-duration: .4s;
 }
 
-#menu-header i{
-    margin: 10px 10px;
+.menu-icons i{
+    margin: 20px 20px;
     background-color: var(--color-gray);
     border-radius: 100%;
     padding: 10px;
@@ -75,7 +78,7 @@ nav a:hover{
     cursor: pointer;
 }
 
-#menu-header i:hover{
+.menu-icons i:hover{
     background-color: var(--color-green);
     color: var(--color-white);
     transform: rotateZ(360deg);
@@ -89,6 +92,7 @@ main {
 }
 
 .container {
+    margin-top: 10px;
     width: 90%;
     margin: 0 auto;
     overflow: hidden;
@@ -103,7 +107,8 @@ main {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     align-items: center;
-    gap: 1em;
+    gap: 1em; 
+    margin-top: 71px;
  }
 
  .slider__body {
@@ -186,6 +191,53 @@ button:hover {
     justify-self: end;
 }
 
+
+/*Inicio responsive slider*/
+
+    @media (max-width: 1050px) {
+      
+        h2 {
+            font-size: 40px;
+        }
+
+        .slider__review {
+            font-size: 14px;
+        }
+
+        .slider__img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+            margin: 0 auto;
+            margin-left: 20px;
+         }
+
+    }
+
+    @media (max-width: 700px) {
+        
+        .slider__img {
+            display: none;
+        }
+
+        .slider__body {
+            margin-top: 30px;
+        }
+
+        h2 {
+            font-size: 30px;
+        }
+
+        .slider__review {
+            font-size: 13px;
+        }
+
+    }
+
+/*Fin responsive slider*/
+
 /*Fin del codigo de estilo del slider*/
 
 /*Inicio del estilo produtos 1*/
@@ -242,6 +294,23 @@ button:hover {
 
 /*Inicio del about*/
 
+.menu-icons-about i{
+    margin: 5px;
+    background-color: var(--color-gray);
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--color-green);
+}
+
+
+.menu-icons-about span {
+    font-size: 14px;
+    margin: 10px;
+    color: var(--color-gray-special-buttons);
+}
+
 #container-about {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -257,6 +326,10 @@ button:hover {
     padding: 10px;
 }
 
+#p-about {
+    margin-bottom: 10px;
+}
+
 .subtitle__about {
     margin-top: 30px;
     text-align: center;
@@ -270,22 +343,49 @@ button:hover {
 
 /*Inicio del codigo de los botones especiales*/
 
-.button__about a button {
-    background-color: var(--color-gray);
-    color: var(--color-gray-special-buttons);
-    pointer-events: none;
-    font-size: 1em
-}
-
-.button__about a button i {
-    color: var(--color-green);
-    font-size: 1.2em;
-    margin-right: 10px;
-    
-}
 
 /*Fin del about*/
 
+/*inicio del responsive about*/
+
+@media (max-width: 1000px) {
+
+    #text-about h2{      
+        font-size: 30px;
+    }
+    #text-about p{      
+        font-size: 13px;
+    }
+
+    .menu-icons-about i{
+        font-size: 15px;
+
+    }
+    
+    
+    .menu-icons-about span {
+        font-size: 10px;
+
+    }
+
+}
+
+@media (max-width: 670px) {
+    
+    #container-about {
+        display: block;
+        justify-content: center;
+    }
+    
+
+    
+    #img-about {
+        display: none;
+    }
+
+}
+
+/*Fin del responsive about*/
 /*Inicio del review*/
 
 
@@ -421,8 +521,14 @@ button:hover {
         align-items: center;
         justify-content: space-around;
         padding: 10px;
-        
+        flex-wrap: wrap;       
     }
+
+/*Inicio del responsive del footer*/
+
+
+
+/*Fin del responsive del footer*/
 
 
 /*Fin del codigo Footer*/
