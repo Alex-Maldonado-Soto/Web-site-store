@@ -40,16 +40,17 @@
                  <a href="#review" onclick="navBarToggle()">Review</a>
                  <a href="#order-form" onclick="navBarToggle()">Order</a>
                 </nav>
-
-
     </header>
 
     <!--Fin del header-->
+
+    <a id="home" class="section"></a>
+
     <!--Inicio del codigo del slider-->
 
     
 <main class="slider">
-    <a name="home"></a>
+
     <div class="slider__container container">
         <img src="assents/row-left.svg" alt="Imagen de flecha Izquierda" class="slider__arrow" id="before">
 
@@ -121,7 +122,6 @@
 
 
   <section class="container-container-cards">
-    <a name="products"></a>
     <div class="subtitle">
         <h5>Out Dishes</h5>
         <h2>Popular Dish</h2>
@@ -168,6 +168,8 @@
                 </a>
             </article>
 
+
+
             <article class="card">
                 <figure>
                     <img src="imagenes/dish-1.png" alt="imagen de una hamburguesa">
@@ -208,25 +210,8 @@
                 </a>
             </article>
 
-            <article class="card">
-                <figure>
-                    <img src="imagenes/dish-1.png" alt="imagen de una hamburguesa">
-                </figure>
-
-                <div class="divider"></div>
-
-                
-
-                <div class="text-card">
-                    <h2>Tasty food</h2>
-                </div>
-                <div class="price">
-                    <h5>$15.99</h5>
-                </div>
-                <a href="#" id="button-card">
-                    <button>Add Orden</button>
-                </a>
-            </article>
+                        <!--enlace para el navbar-->
+                        <a id="products" class="section"></a>
 
             <article class="card">
                 <figure>
@@ -248,8 +233,32 @@
                 </a>
             </article>
 
+            <article class="card">
+                <figure>
+                    <img src="imagenes/dish-1.png" alt="imagen de una hamburguesa">
+                </figure>
 
-            
+                <div class="divider"></div>
+
+                
+
+                <div class="text-card">
+                    <h2>Tasty food</h2>
+                </div>
+                <div class="price">
+                    <h5>$15.99</h5>
+                </div>
+                <a href="#" id="button-card">
+                    <button>Add Orden</button>
+                </a>
+            </article>
+
+
+          
+
+<!--enlace para el navbar-->
+<a id="products" class="section"></a>
+
         </div>
    
   </section> 
@@ -260,7 +269,7 @@
     <!--inicio de about-->
 
   <section>
-    <a name="about"></a>
+    <a id="about" class="section"></a>
     <div class="subtitle__about">
         <h5>Out Dishes</h5>
         <h2>Popular Dish</h2>
@@ -295,7 +304,7 @@
 
     <section class="container-container-cards">
 
-        <a name="review"></a>
+        <a id="review" class="section"></a>
 
         <div class="subtitle">
             <h5>Customer`s Review</h5>
@@ -366,7 +375,7 @@
 
     <section class="container-form">
 
-        <a name="order-form"></a>
+        <a id="order-form" class="section"></a>
 
         <form action="" method="POST" id="form">
             <div class="form">
@@ -419,6 +428,7 @@
 
 
     <!--Fin del order-->
+
 
 <!--script nabar-->
 <script src="js/navbar.js"></script>

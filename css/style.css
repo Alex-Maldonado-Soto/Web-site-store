@@ -9,6 +9,10 @@
 --color-gray-special-buttons: #a1a1a1; 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -69,6 +73,16 @@ nav a:hover{
     border-radius: 10px;
     padding: 10px 10px;
     transition-duration: .4s;
+}
+
+.active {
+        margin: 0 10px;
+        text-decoration: none;
+        color: var(--color-white);
+        background-color: var(--color-green);
+        border-radius: 10px;
+        padding: 10px 10px;
+        transition-duration: .4s;
 }
 
 .nav-icon {
@@ -290,6 +304,9 @@ button:hover {
 
 /*Inicio del estilo produtos 1*/
 
+#products {
+    height: 100%;
+}
 
 #texts-products-1{
     text-align: center;
