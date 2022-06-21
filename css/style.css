@@ -22,6 +22,7 @@ body {
 /* Inicio del codigo del header*/
 
 header {
+    z-index: 1000;
     padding: 5px;
     display: flex;
     box-shadow: 1px 4px 13px 1px var(--color-gray);
@@ -50,10 +51,11 @@ nav {
     font-family: 'Roboto Slab', Arial;
     font-weight: 500;
     font-size: 20px;
+    display: flex;
 }
 
 nav a {
-    margin: 0 10px;
+    margin: 10px 20px;
     text-decoration: none;
     color: #616161;
     cursor: pointer;
@@ -68,6 +70,11 @@ nav a:hover{
     padding: 10px 10px;
     transition-duration: .4s;
 }
+
+.nav-icon {
+    display: none;
+}
+
 
 .menu-icons i{
     margin: 20px 20px;
@@ -84,6 +91,47 @@ nav a:hover{
     transform: rotateZ(360deg);
     transition-duration: 0.4s;
 }
+
+
+/*Inicio del responsive del navbar*/
+
+@media (max-width: 800px) {
+
+    nav a {
+        margin: 10px 10px;
+    }
+    
+}
+
+@media (max-width: 700px) {
+
+
+    .nav-icon {
+        display: inline;
+    }
+
+    .nav-responsive {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    header {
+        flex-wrap: wrap;
+    }
+
+    nav a {
+        margin: 30px;
+    }
+
+}
+
+/*Fin del responsive del navbar*/
 
 /*Fin del codigo del header*/
 /*Inicio del codigo de estilo del slider*/

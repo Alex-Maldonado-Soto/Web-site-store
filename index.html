@@ -30,13 +30,18 @@
             <span class="text-logo">FoodStore</span>
         </article>
             
-                <nav>
-                 <a href="#">Home</a>
-                 <a href="#">Dishes</a>
-                 <a href="#">About</a>
-                 <a href="#">Review</a>
-                 <a href="#">Order</a>
+        <div class="menu-icons nav-icon" onclick="navBarToggle()">
+            <i class="fa-solid fa-magnifying-glass"><a href="#"></a></i>
+        </div>
+                <nav class="nav-responsive">
+                 <a href="#home" onclick="navBarToggle()">Home</a>
+                 <a href="#products" onclick="navBarToggle()">Dishes</a>
+                 <a href="#about" onclick="navBarToggle()">About</a>
+                 <a href="#review" onclick="navBarToggle()">Review</a>
+                 <a href="#order-form" onclick="navBarToggle()">Order</a>
                 </nav>
+
+
     </header>
 
     <!--Fin del header-->
@@ -44,7 +49,7 @@
 
     
 <main class="slider">
-
+    <a name="home"></a>
     <div class="slider__container container">
         <img src="assents/row-left.svg" alt="Imagen de flecha Izquierda" class="slider__arrow" id="before">
 
@@ -116,7 +121,7 @@
 
 
   <section class="container-container-cards">
-
+    <a name="products"></a>
     <div class="subtitle">
         <h5>Out Dishes</h5>
         <h2>Popular Dish</h2>
@@ -255,6 +260,7 @@
     <!--inicio de about-->
 
   <section>
+    <a name="about"></a>
     <div class="subtitle__about">
         <h5>Out Dishes</h5>
         <h2>Popular Dish</h2>
@@ -288,6 +294,8 @@
     <!--Inicio del review-->
 
     <section class="container-container-cards">
+
+        <a name="review"></a>
 
         <div class="subtitle">
             <h5>Customer`s Review</h5>
@@ -358,6 +366,8 @@
 
     <section class="container-form">
 
+        <a name="order-form"></a>
+
         <form action="" method="POST" id="form">
             <div class="form">
                 <div class="subtitle__about">
@@ -410,11 +420,8 @@
 
     <!--Fin del order-->
 
-
- <!--Sirve para acelerar las animaciones pero ya que no se exactamente como se usa la dejare apartada   
- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
- -->
-
+<!--script nabar-->
+<script src="js/navbar.js"></script>
 <!-- sripts de javascrpt  -->
 <script src="js/script.js"></script>
 <!--Script del slider-->
