@@ -23,6 +23,85 @@ body {
     font-family: 'Roboto Slab', serif;
 }
 
+/*Inicio del codigo del loader*/
+
+
+
+#container_loader {
+    background-color: var(--color-white);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 10000;
+    display: flex;
+}
+
+#content-load {
+    position: relative;
+    width: 338px;
+    height: 338px;
+    margin: auto;
+
+}
+
+#loader-logo {
+    top: 45%;
+    width: 30%;
+    height: 30%;
+    left: 37%;
+    position: absolute;
+}
+
+#content-load #loader1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    border: solid 11px transparent;
+    border-top-color: var(--color-green);
+    border-left-color: var(--color-green);
+    border-radius: 50%;
+    animation: loader 1s ease-in infinite;
+}
+
+#content-load #loader2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    height: 50%;
+    border: solid 11px transparent;
+    border-top-color: var(--color-blue);
+    border-left-color: var(--color-blue);
+    border-radius: 50%;
+    animation: loader2 1.2s ease-in-out infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
+@keyframes loader2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+
+
+
+
+
+/*Fin del codigo del loader*/
+
 /* Inicio del codigo del header*/
 
 header {
