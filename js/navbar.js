@@ -46,3 +46,6 @@ const observer = new IntersectionObserver((entradas, observador) => {
 encabezados.forEach(encabezado =>{
     observer.observe(encabezado);
 });
+
+
+
